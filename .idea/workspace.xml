@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66c75b61-88a6-460b-9657-d2ba4dbd162c" name="Changes" comment="green box added">
-      <change afterPath="$PROJECT_DIR$/timed_camera_exercise.py" afterDir="false" />
+    <list default="true" id="66c75b61-88a6-460b-9657-d2ba4dbd162c" name="Changes" comment="added date and time to timed camer exervise video">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +32,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.timed_camera_exercise.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.timed_camera_exercise.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.timed_camera_exercise">
+}</component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="email_webcam_detection" />
       <option name="ENV_FILES" value="" />
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706027383033</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added date and time to timed camer exervise video">
+      <option name="closed" value="true" />
+      <created>1706045140223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706045140223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -148,6 +156,7 @@
     <MESSAGE value="start video and end sequence" />
     <MESSAGE value="Grayframe added" />
     <MESSAGE value="green box added" />
-    <option name="LAST_COMMIT_MESSAGE" value="green box added" />
+    <MESSAGE value="added date and time to timed camer exervise video" />
+    <option name="LAST_COMMIT_MESSAGE" value="added date and time to timed camer exervise video" />
   </component>
 </project>
