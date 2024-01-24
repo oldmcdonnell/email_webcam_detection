@@ -1,5 +1,6 @@
 import cv2
 import time
+from emailing import send_email
 
 video = cv2.VideoCapture(0)
 time.sleep(1) # wait for video to process
@@ -10,8 +11,6 @@ count = 1
 while True:
     status = 0
     check, frame = video.read() # reads vide
-    cv2.imwrite(f"images/{count}.png", frame)
-    count = count + 1
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     gray_frame_gau = cv2.GaussianBlur(gray_frame, (21, 21), 0)
 
@@ -30,7 +29,15 @@ while True:
         if cv2.contourArea(contour) < 7500: #change value to determine sensitivity to green box
             continue
         x, y, w, h = cv2.boundingRect(contour)
-        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 3)
+        rectangle = cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 3)
+        if rectangle.any():
+            send_email()
+            status = 1
+            cv2.imwrite(f"images/{count}.png", frame)
+            count = count + 1
+
+    status_list.append(status)
+    print(status_list)
 
     cv2.imshow("Video", frame)
     key = cv2.waitKey(1) #keyboard key objec
