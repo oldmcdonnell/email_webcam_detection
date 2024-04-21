@@ -2,9 +2,10 @@
 import smtplib, ssl
 import imagesize
 import imghdr
+import pass from asdf
 from email.message import EmailMessage
 
-PASSWORD = 'bgce phqo zbuh xvrh'
+PASSWORD = pass
 SENDER = "oldmcdonnell@gmail.com"
 RECEIVER = "oldmcdonnell@gmail.com"
 
